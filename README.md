@@ -1,5 +1,6 @@
 # React-Native-Weather
 
+## A basic Weather application built with the help of an external API to get the forecasting information. 
 ## What I used: 
 - React Native 
 - External Weather API 
