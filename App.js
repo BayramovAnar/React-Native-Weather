@@ -5,7 +5,7 @@ import { setWarningFilter } from 'react-native/Libraries/LogBox/Data/LogBoxData'
 
 
 const App = () => {
-  const [input, setInput] = useState("")
+  const [input, setInput] = useState("Baku")
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState([])
 
@@ -28,6 +28,10 @@ const App = () => {
     .catch(e => console.dir(e))
     .finally(() => setLoading(false)); 
 }, [API.key, input]);  
+  
+  useEffect(() => {
+    fetchData()
+  },[])
 
 
   return (
